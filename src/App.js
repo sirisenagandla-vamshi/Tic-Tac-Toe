@@ -54,7 +54,7 @@ function App() {
   for(let i=0; i<WIN_CONDITIONS.length; i++){
     const [x, y, z] = WIN_CONDITIONS[i];
 
-    if(board[x] && board[x] == board[y] && board[y] == board[z]){
+    if(board[x] && board[x] === board[y] && board[y] === board[z]){
       setGameOver(true)
       return board[x]
     }
